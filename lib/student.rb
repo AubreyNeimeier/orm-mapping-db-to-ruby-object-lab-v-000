@@ -66,7 +66,7 @@ end
 
 def count_all_students_in_grade_9
   sql = <<-SQL
-    SELECT COUNT(name)
+    SELECT *
     FROM students
     WHERE grade = 9
     SQL
