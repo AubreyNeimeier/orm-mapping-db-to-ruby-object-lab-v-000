@@ -102,7 +102,7 @@ class Student
       LIMIT 1
       SQL
 
-      DB[:conn].execute(sql).first.save
+      DB[:conn].execute(sql).save
   end
 
 end
