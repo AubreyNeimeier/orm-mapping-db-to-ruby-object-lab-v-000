@@ -102,7 +102,7 @@ class Student
       LIMIT 1
       SQL
 
-      new_student = self.new(DB[:conn].execute(sql))
+      new_student = self.new_from_db(DB[:conn].execute(sql))
   end
 
   def self.all_students_in_grade_X(x)
