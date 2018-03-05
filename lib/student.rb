@@ -101,7 +101,7 @@ class Student
       WHERE grade = 10
       SQL
 
-      DB[:conn].execute(sql).first
+      DB[:conn].execute(sql).save
   end
 
 end
